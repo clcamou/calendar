@@ -121,3 +121,17 @@ footer {
   background: #666;
   border-top: 8px solid black;
 }
+
+
+@keyframes shadow-pulse
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+  }
+}
+.shadowPulse {
+  animation: shadow-pulse 1s infinite;
+}

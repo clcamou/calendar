@@ -6,6 +6,12 @@
     Web Link: https://clcamou.github.io/calendar/
     This app is supported on any browser. 
 
+## Running Test 
+ Run tests in non-standard hours
+    let nowHour24 = moment().format('H');
+    let nowHour12 = moment().format('h');
+ Test for stored plans 
+    
 ## Built With 
     1. HTML
     2. JavaScript 

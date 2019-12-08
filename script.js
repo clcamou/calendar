@@ -33,8 +33,6 @@ $(document).ready(function() {
     if (storedPlans !== null) {
       planTextArr = storedPlans;
     } else {
-      // this should only occur on first time the app is loaded in the browser
-      // helpfully remind user that lunch is important
       planTextArr = new Array(9);
     }
   
