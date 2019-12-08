@@ -21,7 +21,7 @@ $(document).ready(function() {
     
     // using font awesome icon https://fontawesome.com/license
     // change description here - none
-    let saveIcon = "./images/save-regular.svg"; 
+    let $saveBtn = "./images/save-regular.svg"; 
   
     // Get stored todos from localStorage
     // Parsing the JSON string to an object
@@ -38,7 +38,7 @@ $(document).ready(function() {
       planTextArr = new Array(9);
     }
   
-    if (test) { console.log("full array of plned text",planTextArr); }
+    if (test) { console.log("full array of planed text",planTextArr); }
   
     // set variable referencing planner element
     let $plannerDiv = $('#plannerContainer');
@@ -115,7 +115,7 @@ $(document).ready(function() {
       let $saveBtn = $('<i>');
       $saveBtn.attr('id',`saveid-${index}`);
       $saveBtn.attr('save-id',index);
-      $saveBtn.attr('class',"far fa-save saveIcon");
+      $saveBtn.attr('class',"far fa-save saveBtn");
       
       // add col width and row component to row
       $rowDiv.append($col1SaveDiv);
